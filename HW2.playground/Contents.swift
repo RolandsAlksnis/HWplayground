@@ -93,6 +93,25 @@ let dayOfBirth = 1
 let monthOfBirth = 9
 let yearOfBirth = 1998
 
+let formatter = DateFormatter()
+formatter.dateFormat = "dd.MM.yyyy"
+
+
+var dateComponent = DateComponents()
+
+
+let calendar = Calendar.current
+
+let currentDate = Date()
+let birthDate = formatter.date(from: "01.09.1998")
+
+
+let totalDaysFromBirth = calendar.dateComponents([.day], from: birthDate!, to: currentDate).day
+let totalMonthsFromBirth = calendar.dateComponents([.month], from: birthDate!, to: currentDate).month
+let totalYearsFromBirth = calendar.dateComponents([.year], from: birthDate!, to: currentDate).year
+
+print("Total years: \(totalYearsFromBirth) , total months: \(totalMonthsFromBirth), total days: \(totalDaysFromBirth)")
+
 // MARK: - EX6
 /*
  Ex6:
