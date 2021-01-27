@@ -72,14 +72,14 @@ print("New: \(qty) MacBook Pro with the price of: \(price) EUR, will cost you: \
 
 var userInputAge: String = "33a"
 
-Int(userInputAge)
+var convertToInt = Int(userInputAge)
 
-print(userInputAge)
+print(convertToInt)
 
-if userInputAge == nil {
-    print("userInputAge converted to Int does not contain any value")
+if convertToInt == nil {
+    print("userInputAge converted to convertToInt does not contain any value")
 } else {
-    print("convertToInt:", userInputAge as Any)
+    print("convertToInt:", convertToInt as Any)
 }
 
 // MARK: - EX5
