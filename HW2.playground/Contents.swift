@@ -72,7 +72,7 @@ print("New: \(qty) MacBook Pro with the price of: \(price) EUR, will cost you: \
 
 var userInputAge: String = "33a"
 
-var convertToInt = Int(userInputAge)
+var convertToInt = Int(userInputAge)!
 
 print(convertToInt)
 
