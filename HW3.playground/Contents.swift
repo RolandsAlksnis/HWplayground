@@ -71,13 +71,9 @@ var metersClimbed = 0
 var hourCounter = 0
 
 while metersClimbed < electricPost {
-    for _ in metersClimbed...electricPost {
-        metersClimbed += climbedInDay
-        metersClimbed -= climbedInNight
-        numberOfDays += 1
-        print("The bug will spend:", numberOfDays)
-    }
+    metersClimbed += climbedInDay
+    metersClimbed -= climbedInNight
+    numberOfDays += 1
 }
-
 
 print("Bug will spend \(numberOfDays) days to reach top of the post")
