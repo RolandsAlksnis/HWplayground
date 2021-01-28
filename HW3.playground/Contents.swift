@@ -69,13 +69,11 @@ print("Number 5 will be after \(counter) shuffles")
 
 
 let electricPost = 10
-
 let climbedInDay = 2
 let climbedInNight = 1
 
 var numberOfDays = 0
 var metersClimbed = 0
-
 var hourCounter = 0
 
 while metersClimbed < electricPost {
