@@ -49,10 +49,18 @@ print("My even numbers are: \(evenNumbers)")
  Exercise 3
  Inside the for loop create randomNumber for the random Int calculation. Calculate and print("Number 5 will be after \(counter) shuffles"). Don't forget to make a break inside the if statement.
  */
+var counter = 1             // Has to be atleast 1 shuffle
 
-//for i in RandomNumberGenerator {
-//    next()
-//}
+for _ in 1...5 {
+    let randomNumber = Int.random(in: 0...5)
+    if randomNumber == 5 {
+        break
+    } else {
+        counter += 1
+    }
+}
+
+print("Number 5 will be after \(counter) shuffles")
 // MARK: - Ex 4
 /*
  Exercise 4
