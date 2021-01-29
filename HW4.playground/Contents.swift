@@ -66,6 +66,8 @@ func calculateCash(billsInWallet: [Int]) -> Int{
     }
     return cashTotal
 }
+
+
 calculateCash(billsInWallet: arrayOfCash)
 print(calculateCash(billsInWallet: arrayOfCash))
 print("\n")
@@ -87,6 +89,8 @@ func isEvenNumber(numberParsed: Int) -> Bool {
         return number
     }
 }
+
+
 
 isEvenNumber(numberParsed: 115)
 isEvenNumber(numberParsed: 110)
@@ -125,15 +129,16 @@ print("\n")
 
 
 
+
 var array = createArray(start: 1, end: 20)
-var checkedArray = isEvenNumber(numberParsed: array)
+
 
 for checker in array {
-    isEvenNumber(numberParsed: array)
+    if isEvenNumber(numberParsed: checker) {
     if let checker = array.firstIndex(of: checker) {
-//        isEvenNumber(numberParsed: <#T##Int#>)
         array.remove(at: checker)
-        print(array)
     }
-
+  }
 }
+
+print(array)
