@@ -123,12 +123,6 @@ print("\n")
  It should be 1/2 of createArray and started from [1,3,5.....
  */
 
-var students = ["Ben", "Ivy", "Jordell", "Maxime"]
-if let i = students.firstIndex(of: "Maxime") {
-    students[i] = "Max"
-}
-print(students)
-// Prints "["Ben", "Ivy", "Jordell", "Max"]"
 
 
 var array = createArray(start: 1, end: 20)
